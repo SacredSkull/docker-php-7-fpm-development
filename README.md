@@ -38,7 +38,7 @@ To use this as an interpreter you have a few options:
 - Use an SSH container to gain access
 
 #### SSH container
-Replace the container variable with whatever you named your PHP container. Unfortunately, this doesn't currently work with Windows. See [https://github.com/jeroenpeeters/docker-ssh/issues/7#issuecomment-205892305](for more details.) Eventually, however, it should provide a cross-platform and easy to implement remote interpreter.
+Replace the container variable with whatever you named your PHP container. Unfortunately, this doesn't currently work with Windows. See [this issue for more details.](https://github.com/jeroenpeeters/docker-ssh/issues/7#issuecomment-205892305) Eventually, however, it should provide a cross-platform and easy to implement remote interpreter.
 
 Your docker socket has to be mounted - this is a security risk - don't expose this publically.
 ```
