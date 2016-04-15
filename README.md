@@ -1,9 +1,25 @@
 ## Image description
 
 Based on the official PHP 7 FPM image, this new flavour comes with:
-- Extensions: xdebug, pdo, pdo_mysql, zip, blackfire
+- Extensions: pdo, pdo_mysql, zip
 - Git & unzip
 - Composer (in path)
+
+AND... optionally:
+- xdebug
+- blackfire
+- none or all of the above (see tag table below)
+
+Additional tags will probably submerge.
+
+## Tags
+
+|                   | debian                         | alpine                 |
+|-------------------|--------------------------------|------------------------|
+| xdebug, blackfire | latest, debian-debug-blackfire | alpine-debug-blackfire |
+| xdebug            | debian-debug                   | alpine-debug           |
+| blackfire         | debian-blackfire               | alpine-blackfire       |
+| none              | debian-vanilla                 | alpine-vanilla         |
 
 Overwritten `WORKDIR`- now at `/var/www` rather than the html subdirectory.
 
