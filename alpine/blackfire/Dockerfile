@@ -1,6 +1,6 @@
 FROM php:7-fpm-alpine
 	
-RUN apk add --update zlib unzip git && rm -rf /var/cache/apk/*
+RUN apk add --update zlib zlib-dev unzip git && rm -rf /var/cache/apk/*
 
 RUN docker-php-ext-install pdo pdo_mysql zip
 
